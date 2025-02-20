@@ -17,6 +17,12 @@ Um player de IPTV desenvolvido em **JavaScript puro**, que permite ao usuário c
 
 ---
 
+## 🖼️ **Pré-visualização**
+
+![Image](https://github.com/user-attachments/assets/eafb3a78-9a26-436d-8e43-31cb21ba5130)
+
+---
+
 ## 💾 Como Usar o Projeto
 
 ### 🔨 **Passo 1: Clone o repositório**
@@ -87,12 +93,6 @@ code .
 - 🎨 **CSS3** (com **Bootstrap 5** para responsividade)
 - 💻 **JavaScript puro**
 - 📚 **hls.js** para suporte a streaming HLS
-
----
-
-## 🖼️ **Pré-visualização**
-
-![IPTV Player](img/Logo%20horizontal.png)
 
 ---
 
