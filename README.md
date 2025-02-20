@@ -22,13 +22,13 @@ Um player de IPTV desenvolvido em **JavaScript puro**, que permite ao usuário c
 ### 🔨 **Passo 1: Clone o repositório**
 
 ```bash
-https://github.com/usuario/repositorio-iptv-player.git
+https://github.com/thiago-ribeiro1/IPTV-Player.git
 ```
 
 ### 🖥️ **Passo 2: Abra o projeto no Visual Studio Code**
 
 ```bash
-cd repositorio-iptv-player
+cd IPTV-Player
 code .
 ```
 
@@ -47,18 +47,18 @@ code .
 
 ```
 ├── css
-│   └── style.css               # Estilos personalizados do projeto
+│   └── style.css               # Estilos personalizados 
 ├── img
-│   ├── glenn-carstens-peters-EOQhsfFBhRk-unsplash.jpg  # Imagem adicional
-│   ├── icon.png                # Ícone da aba do navegador
-│   ├── Logo horizontal.png     # Logotipo principal
-│   └── logo.png                # Logo alternativo
+│   ├── glenn-carstens-peters-EOQhsfFBhRk-unsplash.jpg  # Imagem background
+│   ├── icon.png                                        # Ícone da aba do navegador
+│   ├── Logo horizontal.png                             # Logotipo principal
+│   └── logo.png                                        # Logo alternativo
 ├── js
-│   └── script.js               # Lógica principal em JavaScript puro
+│   └── script.js               # Lógica principal em JavaScript
 ├── Listas_IPTV
 │   ├── Canais BR.m3u                   # Lista de canais brasileiros
 │   ├── Canais_Abertos_BR.m3u           # Canais abertos do Brasil
-│   ├── CineTV_Brasil.m3u               # Lista temática de cinema e TV
+│   ├── CineTV_Brasil.m3u               # Lista de canais e filmes
 │   └── Paulo.m3u                       # Exemplo de lista personalizada
 ├── index.html                  # Página principal do IPTV Player
 ```
@@ -96,35 +96,11 @@ code .
 
 ---
 
-## 💬 **Contribuições**
-
-Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
-
-1. Fork o projeto
-2. Crie sua branch: `git checkout -b feature/nova-funcionalidade`
-3. Commit suas alterações: `git commit -m 'Adiciona nova funcionalidade'`
-4. Push na sua branch: `git push origin feature/nova-funcionalidade`
-5. Abra um pull request
-
----
-
 ## 📜 **Licença**
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Distribuído sob a licença Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+Veja o arquivo `LICENSE` para mais informações ou acesse o texto completo da licença em CC BY-NC 4.0.
 
 ---
 
-## 🙋 **Autor**
-
-Desenvolvido por [Seu Nome](https://github.com/seuusuario) 💙
-
----
-
-🔗 **Referências:**
-- [hls.js Documentation](https://github.com/video-dev/hls.js/)
-- [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- 🌐 [htforum.net - Listas IPTV](http://htforum.net/)
-
----
-
-🎉 **Divirta-se assistindo seus canais favoritos com o IPTV Player!**
+Desenvolvido por [Thiago Ribeiro](https://github.com/thiago-ribeiro1) 
