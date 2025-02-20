@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPTV Player</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <!-- Nome do site -->
+        <a class="navbar-brand" href="#">IPTV Player</a>
+
+        <!-- Botão Hamburguer -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Itens do menu -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="loadPlaylist('all')"
+                >Todos os Canais</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="loadPlaylist('br')"
+                >Canais Brasil</a
+              >
+            </li>
+          </ul>
+
+          <!-- Inputs e botões -->
+          <div
+            class="d-flex flex-column flex-lg-row align-items-center ms-lg-3"
+          >
+            <input
+              type="text"
+              id="m3uUrl"
+              class="form-control my-2 my-lg-0 mx-lg-2"
+              placeholder="Insira sua URL M3U"
+            />
+            <button
+              class="btn btn-custom my-2 my-lg-0 mx-lg-2"
+              id="btn-nav"
+              onclick="addPlaylist()"
+            >
+              Adicionar Lista
+            </button>
+            <input
+              type="file"
+              id="m3uFile"
+              class="form-control my-2 my-lg-0 mx-lg-2"
+              accept=".m3u"
+              onchange="loadLocalFile()"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="welcome-text">
+      <img
+        class="logo-iptv"
+        src="img/Logo horizontal.png"
+        width="534px"
+        height="141px"
+        alt="logo iptv"
+      />
+      <p>Adicione sua lista M3U para começar a assistir</p>
+    </div>
+
+    <div class="container text-center">
+      <div class="mb-3">
+        <select id="channelSelect" class="form-select"></select>
+        <option id="choose-channel" selected disabled>Escolher Canal</option>
+      </div>
+      <button class="btn btn-custom" onclick="loadChannel()">Assistir</button>
+    </div>
+
+    <div class="video-container mt-4">
+      <video id="videoPlayer" controls></video>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+body { 
+    background: url('../img/glenn-carstens-peters-EOQhsfFBhRk-unsplash.jpg') no-repeat center center fixed; /* background */
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+}
+
+video { width: 100%; border: 2px solid white; border-radius: 8px; }
+
+.btn-custom { background-color: yellow; color: black; border: none; padding: 10px 15px; border-radius: 5px; }
+
+.btn-custom:hover { background-color: #f1c40f; }
+
+.navbar { background-color: #000; }
+
+.welcome-text { text-align: center; padding: 40px 0;}
+
+.welcome-text p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white; /* Cor do texto */
+    text-shadow:
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      -1px -1px 0 black; /* Simula um contorno preto */
+  }
+
+.video-container { max-width: 800px; margin: 0 auto; }
+
+.form-control, .form-select { border-radius: 10px; padding: 12px; max-width: 400px; display: inline-block; font-weight: bold;}
+
+.form-select { background: rgba(168, 168, 168, 0.3); backdrop-filter: blur(5px); }
+
+.form-control::file-selector-button { background-color: yellow; color: black; padding: 5px 10px; border-radius: 10px; }
+
+.form-control::placeholder {
+    color: gray; /* Define a cor desejada */
+    opacity: 1; /* Garante que a cor seja visível */
+  }
+  
+#choose-channel { color: white; }  
+
+.logo-iptv {
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaçamento indesejado */
+    margin: 0 auto; /* Centraliza a imagem */
+  }
+
+#btn-nav { 
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    justify-content: center; /* alinha horizontalmente */
+    height: 50px; 
+}
+  
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .form-control, .form-select {
+        padding: 8px;
+        max-width: 280px;
+        font-size: 14px;
+    }
+
+    #m3uFile {
+        width: 250px;
+    }
+
+    #btn-nav {
+        font-size: 12px;
+        padding: 8px 12px;
+        height: 37px !important;
+    }
+
+    .btn-custom {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Reduz a altura da navbar SOMENTE no iPad Pro (1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding-top: 5px;  /* Reduz o espaçamento superior */
+        padding-bottom: 5px;  /* Reduz o espaçamento inferior */
+    }
+
+    .navbar-brand {
+        font-size: 13px; /* reduz o tamanho do título */
+    }
+
+    #btn-nav { /* Ajustar botão do navbar */
+        font-size: 14px;
+        height: 50px;
+    }
+
+    #m3uFile { 
+        width: 290px; /* largura do file input */
+    }
+
+    .nav-link {
+        font-size: 11px; /* tamanho dos links do navbar */
+    }
+
+    .navbar-toggler {
+        padding: 4px 6px; /* Ajusta o botão hamburguer */
+    }
+}  
