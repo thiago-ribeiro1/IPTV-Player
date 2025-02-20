@@ -99,7 +99,7 @@ code .
 ## 📜 **Licença**
 
 Distribuído sob a licença Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
-Veja o arquivo `LICENSE` para mais informações ou acesse o texto completo da licença em CC BY-NC 4.0.
+Veja o arquivo [LICENSE](https://github.com/thiago-ribeiro1/IPTV-Player/blob/main/LICENSE) para mais informações ou acesse o texto completo da licença em CC BY-NC 4.0.
 
 ---
 
