@@ -28,7 +28,7 @@ Um player de IPTV desenvolvido em **JavaScript puro**, que permite ao usuário c
 ### 🔨 **Passo 1: Clone o repositório**
 
 ```bash
-https://github.com/thiago-ribeiro1/IPTV-Player.git
+git clone https://github.com/thiago-ribeiro1/IPTV-Player.git
 ```
 
 ### 🖥️ **Passo 2: Abra o projeto no Visual Studio Code**
